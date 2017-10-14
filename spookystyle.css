@@ -1,6 +1,25 @@
-h1 {
-  font-family: Georgia;
-  }
 body {
-  background-color: orange;
-  }
+    background-image: url(http://www.designbolts.com/wp-content/uploads/2014/09/2014_halloween_night_Wallpaper_HD.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    width: 80%;
+    color: white;
+    text-align: center;
+}
+h1 {
+    font-family: 'Nosifer', cursive;
+}
+#maintitle {
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+a {
+    color: white;
+}
+a:hover {
+    font-style: italic;
+}
