@@ -1,18 +1,8 @@
-h1 {
-    font-family: Bitter, Open Sans;
-    text-align: center
-    color: white;
-}
 
-body {
-    padding-left: 2cm;
-    padding-right: 2cm;
-    background-color: rgb(240, 187, 42);
-    font-size: 15px;
-    font-family: Bitter, Open Sans;
-    color: white;
-    background-image: url("pumpkinhill.jpg");
-    background-size: 75%;
+h1 {
+	font-family: Bitter, Open Sans;
+	text-align: center
+	color: white;
 }
 
 body {
@@ -23,10 +13,14 @@ body {
 	font-family: Bitter, Open Sans;
 	color: white;
 	background-image: url("pumpkinhill.jpg");
-	background-size: 75%;
+	background-size: 94%;
 }
 
 
 #picture2 {
-    padding-left: 2cm;
+	padding-left: 2cm;
+}
+
+#opendoor2 {
+	width:100px; height:200px;
 }
