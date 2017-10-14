@@ -1,4 +1,3 @@
-
 h1 {
     font-family: Bitter, Open Sans;
     text-align: center
@@ -14,6 +13,17 @@ body {
     color: white;
     background-image: url("pumpkinhill.jpg");
     background-size: 75%;
+}
+
+body {
+	padding-left: 2cm;
+	padding-right: 2cm;
+	background-color: rgb(240, 187, 42);
+	font-size: 15px;
+	font-family: Bitter, Open Sans;
+	color: white;
+	background-image: url("pumpkinhill.jpg");
+	background-size: 75%;
 }
 
 
