@@ -12,22 +12,34 @@ var chosendoor;
 var candydoornum;
 var otherdoor;
 
+var hasbeenclicked = false;
+var hasdecided = false;
+
 function myFunction() {
+	if (hasbeenclicked == false){
     document.getElementById("door1").innerHTML = "<p><img src= \"yourdoor.jpg\" style='width:100px;height:200px;'</p>";
     chosendoor = 1;
     montyHalloween(chosendoor);
+    hasbeenclicked = true;
+}
 }
 
 function myFunction2() {
+	if(hasbeenclicked== false){
 	document.getElementById("door2").innerHTML = "<p><img src= \"yourdoor.jpg\" style='width:100px;height:200px;'></p>";
 	chosendoor = 2;
 	montyHalloween(chosendoor);
+	hasbeenclicked= true;
+}
 }
 
 function myFunction3() {
+	if (hasbeenclicked==false){
 	document.getElementById("door3").innerHTML = "<p><img src= \"yourdoor.jpg\" style='width:100px;height:200px;'></p>";
 	chosendoor = 3;
 	montyHalloween(chosendoor);
+	hasbeenclicked=true;
+}
 }
 
 function montyHalloween(chosendoor){
@@ -55,9 +67,11 @@ function montyHalloween(chosendoor){
 	message2= string2.concat(otherdoor);
 	message3= message2.concat(string3);
 	window.alert(message3);
+	hasdecided = true;
 }
 
 function switchFunc(){
+	if(hasdecided==true){   
 	window.alert("You have switched doors.");
 	var doors2 = [1,2,3]
 	var i1 = doors2.indexOf(otherdoor);
@@ -75,6 +89,7 @@ function switchFunc(){
 		else if (candydoornum == 3){
 			document.getElementById("door3").innerHTML = "<p><img src= \"candy.jpg\" style='width:100px;height:200px;'></p>";
 		}
+		hasdecided=false;
 	}
 	else{
 		window.alert("You get rocks.");
@@ -87,12 +102,14 @@ function switchFunc(){
 		else if(doors2[0] == 3){
 			document.getElementById("door3").innerHTML = "<p><img src= \"rock.jpg\" style='width:300px;height:200px;'></p>";
 		}
+		hasdecided= false;
 	}
-
+}
 
 
 }
 function noswitchFunc(){
+	if (hasdecided==true){
 	window.alert("You keep your door.");
 	if (chosendoor == candydoornum){
 		window.alert("You get candy!");
@@ -105,6 +122,7 @@ function noswitchFunc(){
 		else if (candydoornum == 3){
 			document.getElementById("door3").innerHTML = "<p><img src= \"candy.jpg\" style='width:100px;height:200px;'></p>";
 		}
+		hasdecided = false;
 	}
 	else{
 		window.alert("You get rocks.");
@@ -117,7 +135,8 @@ function noswitchFunc(){
 		else if(chosendoor == 3){
 			document.getElementById("door3").innerHTML = "<p><img src= \"rock.jpg\" style='width:300px;height:200px;'></p>";
 		}
+		hasdecided = false;
 	}
 }
-
+}
 
